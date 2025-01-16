@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_brick",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ball",
+  "eventList":[],
   "managed":true,
-  "name":"obj_brick",
+  "name":"obj_ball",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_brick",
-    "path":"sprites/spr_brick/spr_brick.yy",
+    "name":"spr_ball",
+    "path":"sprites/spr_ball/spr_ball.yy",
   },
   "spriteMaskId":null,
   "visible":true,
