@@ -11,6 +11,6 @@ if(image_index == 0){
 	global.player_lives += 1;} 
 	
 if (image_index == 3){
-	instance_create_layer(obj_bat.xstart, obj_bat.ystart - obj_bat.sprite_height, "Instances", obj_ball, {speed: 10, sprite_index : 1});
+	instance_create_layer(obj_bat.x, obj_bat.ystart - obj_bat.sprite_height, "Instances", obj_tempball, {speed : 4});
 }
 instance_destroy();

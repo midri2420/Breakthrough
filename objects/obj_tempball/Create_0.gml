@@ -1,3 +1,4 @@
+direction = random_range(45, 135);
 go = true;
-spd = 6;
-x = obj_bat.x;
+spd = 5;
+image_index = 1; 
