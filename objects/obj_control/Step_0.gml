@@ -17,10 +17,10 @@ if (room == rm_game){
 	}
 
 	if(gameover){
+		room_restart();
 		if (global.player_score > global.high_score){
-			global.high_score = global.player_score;
 			room_goto(rm_win);
-			}
+		}
 		else{
 			room_goto(rm_lose);
 		}
