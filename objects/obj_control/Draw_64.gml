@@ -22,6 +22,7 @@ switch(room){
 			);
 			_x += 64;
 			}
+		break;
 			
 	case rm_start:
 		draw_set_halign(fa_center);
@@ -35,7 +36,8 @@ switch(room){
 			"GET HIGHEST SCORE\n\n \n ARROW KEYS: Left/Right\n SPACE: Shoot Ball\n\n>> PRESS ENTER TO START <<");
 		draw_set_halign(fa_left);
 		break;
-	case rm_gameover:
+
+	case rm_lose:
 		draw_set_halign(fa_center);
 		var c = c_red;
 		draw_text_transformed_color(
@@ -52,4 +54,22 @@ switch(room){
 		);
 		draw_set_halign(fa_left);
 		break;
+		
+	case rm_win:
+		draw_set_halign(fa_center);
+		var c = c_lime;
+		draw_text_transformed_color(
+			room_width/2, 100, "NICE JOB!",
+			3, 3, 0, c,c,c,c, 1
+		);
+		draw_text(
+			room_width/2, 250, 
+			"New High Score: " + string(score)
+		);
+		draw_text(
+			room_width/2, 300, 
+			"Press enter to play again"
+		);
+		break;
 }
+
