@@ -4,8 +4,15 @@ if(keyboard_check_pressed(vk_enter)){
 			room_goto(rm_game);
 			break;
 		case rm_win:
+			global.high_score = global.player_score;
+			global.player_score = 0;
+			global.player_lives = 3;
+			room_goto(rm_game);
+			break;
 		case rm_lose:
-			game_restart();
+			global.player_score = 0;
+			global.player_lives = 3;
+			room_goto(rm_game);
 			break;
 	}
 }
@@ -17,7 +24,6 @@ if (room == rm_game){
 	}
 
 	if(gameover){
-		room_restart();
 		if (global.player_score > global.high_score){
 			room_goto(rm_win);
 		}

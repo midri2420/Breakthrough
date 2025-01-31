@@ -46,7 +46,7 @@ switch(room){
 		);
 		draw_text(
 			room_width/2, 250, 
-			"High Score: " + string(score)
+			"High Score: " + string(global.player_score)
 		);
 		draw_text(
 			room_width/2, 300, 
@@ -64,7 +64,7 @@ switch(room){
 		);
 		draw_text(
 			room_width/2, 250, 
-			"New High Score: " + string(score)
+			"New High Score: " + string(global.player_score)
 		);
 		draw_text(
 			room_width/2, 300, 
